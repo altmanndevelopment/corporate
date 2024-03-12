@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page title</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+<nav class="navbar">
+  <div class="menu-toggle" id="mobile-menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <ul class="nav-list" id="nav-list">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="content">
+  <!-- Your webpage content goes here -->
+</div>
+
+<div id="menu"></div>
+  <div id="header">
+    <h1 id="heading">Product Name</h1>
+  </div>
+  <!-- Image Slider Gallery -->
+  <div id="product_gallery">
+    <div class="container">
+      <!-- Full-width images with number text -->
+      <div class="mySlides" style="display: none; width: 100%; height: 50vh;">
+        <div class="numbertext">1 / 6</div>
+        <img src="img_woods_wide.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides" style="display: none; width: 100%; height: 50vh;">
+        <div class="numbertext">2 / 6</div>
+        <img src="img_5terre_wide.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides" style="display: none; width: 100%; height: 50vh;">
+        <div class="numbertext">3 / 6</div>
+        <img src="img_mountains_wide.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides" style="display: none; width: 100%; height: 50vh;">
+        <div class="numbertext">4 / 6</div>
+        <img src="img_lights_wide.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides" style="display: none; width: 100%; height: 50vh;">
+        <div class="numbertext">5 / 6</div>
+        <img src="img_nature_wide.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides" style="display: none; width: 100%; height: 50vh;">
+        <div class="numbertext">6 / 6</div>
+        <img src="img_snow_wide.jpg" style="width:100%">
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)" style="cursor: pointer; position: absolute; width: auto; padding: 16px; color: white; font-weight: bold; font-size: 20px; border-radius: 0 3px 3px 0; user-select: none; -webkit-user-select: none; background-color: rgba(0, 0, 0, 0.8); z-index: 1;">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)" style="cursor: pointer; position: absolute; width: auto; padding: 16px; color: white; font-weight: bold; font-size: 20px; border-radius: 3px 0 0 3px; right: 0; background-color: rgba(0, 0, 0, 0.8); z-index: 1;">&#10095;</a>
+
+      <!-- Image text -->
+      <div class="caption-container" style="text-align: center; background-color: #222; padding: 2px 16px; color: white;">
+        <p id="caption"></p>
+      </div>
+
+      <!-- Thumbnail images -->
+      <div class="row" id="thumbnail-row">
+        <!-- Thumbnail images -->
+        <div class="column">
+          <img class="demo cursor" src="img_woods.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img_5terre.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img_mountains.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img_lights.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img_nature.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img_snow.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Product Features Section -->
+  <div id="product_features">
+    <table>
+  <tr>
+    <th>Feature 1</th>
+    <th>Details 1</th>
+  </tr>
+  <tr>
+    <td><div>Content 1</div></td>
+    <td><div>Content 2</div></td>
+  </tr>
+  <tr>
+    <td><div>Content 3</div></td>
+    <td><div>Content 4</div></td>
+  </tr>
+  <tr>
+    <td><div>Content 5</div></td>
+    <td><div>Content 6</div></td>
+  </tr>
+  <tr>
+    <td><div>Content 7</div></td>
+    <td><div>Content 8</div></td>
+  </tr>
+  <tr>
+    <td><div>Content 9</div></td>
+    <td><div>Content 10</div></td>
+  </tr>
+  <tr>
+    <td><div>Content 11</div></td>
+    <td><div>Content 12</div></td>
+  </tr>
+  <tr>
+    <td><div>Content 13</div></td>
+    <td><div>Content 14</div></td>
+  </tr>
+  <tr>
+    <td><div>Content 15</div></td>
+    <td><div>Content 16</div></td>
+  </tr>
+  <tr>
+    <td><div>Content 17</div></td>
+    <td><div>Content 18</div></td>
+  </tr>
+  <tr>
+    <td><div>Content 19</div></td>
+    <td><div>Content 20</div></td>
+  </tr>
+</table>
+  </div>
+<div id="further_products" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; text-align: center; margin: 10px;">
+  <div style="flex-basis: 30%; margin-bottom: 10px;">
+    <img src="image1.jpg" alt="Image 1" style="height: 100px; width: 100%; margin-bottom: 5px;">
+    <h4>Text 1</h4>
+  </div>
+
+  <div style="flex-basis: 30%; margin-bottom: 10px;">
+    <img src="image2.jpg" alt="Image 2" style="height: 100px; width: 100%; margin-bottom: 5px;">
+    <h4>Text 2</h4>
+  </div>
+
+  <div style="flex-basis: 30%; margin-bottom: 10px;">
+    <img src="image3.jpg" alt="Image 3" style="height: 100px; width: 100%; margin-bottom: 5px;">
+    <h4>Text 3</h4>
+  </div>
+</div>
+  <!-- Contact Form Section -->
+  <div id="contactform">
+  	<div>
+  <h3>Contact Us</h3>
+</div>
+    <!-- Contact Form -->
+    <form>
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="fname" placeholder="Your name..">
+
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lname" placeholder="Your last name..">
+
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" placeholder="Your email..">
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Write something.."></textarea>
+<!-- reCAPTCHA Section -->
+<!-- 
+  To enhance form security and prevent spam submissions, 
+  integrate Google reCAPTCHA by following these steps:
+
+  1. Get your reCAPTCHA API keys by registering your site at https://www.google.com/recaptcha.
+  2. Add the reCAPTCHA API script to the <head> section of your HTML document:
+     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  3. Place the reCAPTCHA widget inside your form where you want the verification to appear:
+     <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
+     Replace "YOUR_RECAPTCHA_SITE_KEY" with your actual site key.
+  4. Ensure proper validation of the reCAPTCHA response on the server side if processing the form server-side.
+-->
+	  <br>
+	  <br>
+      <div id="centered"><button type="submit">Submit</button></div>
+    </form>
+  </div>
+  <br>
+  <br>
+
+  <!-- Footer Section -->
+  <div id="footer">
+    <div class="footer-row">
+      <div class="footer-column footer-address">
+        <img src="address-icon.png" alt="Address Icon" style="width:70px; height:70px; margin-right: 10px;">
+        <p>123 Street, City, Country</p>
+        <p>Zip Code</p>
+      </div>
+
+      <div class="footer-column footer-social-icons">
+       <a href="/storage/emulated/0/Instagram.png" target="_blank">
+    <img src="/storage/emulated/0/Instagram.png" alt="Instagram Favicon">
+</a>
+
+<a href="/storage/emulated/0/YouTube.png" target="_blank">
+    <img src="/storage/emulated/0/YouTube.png" alt="YouTube Favicon">
+</a>
+
+<a href="/storage/emulated/0/LinkedIn.png" target="_blank">
+    <img src="/storage/emulated/0/LinkedIn.png" alt="LinkedIn Favicon">
+</a>
+
+<a href="/storage/emulated/0/WhatsApp.png" target="_blank">
+    <img src="/storage/emulated/0/WhatsApp.png" alt="WhatsApp Favicon">
+</a>
+
+<a href="/storage/emulated/0/Facebook.png" target="_blank">
+    <img src="/storage/emulated/0/Facebook.png" alt="Facebook Favicon">
+</a>
+      </div>
+
+      <div class="footer-column footer-links">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="copyright">
+    &copy; 2024 Your Company Name
+  </div>
+</body>
+</html>
